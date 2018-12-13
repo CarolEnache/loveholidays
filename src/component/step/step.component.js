@@ -1,7 +1,7 @@
 import React from 'react';
+import './step.css';
 
-const Step = ({step = 1}) => (
-  <div> Step {step}</div>  
+const Step = ({ label = 'Step 1', hexColor }) => (
+  <div className="step" style={{ backgroundColor: hexColor }}>{label}</div>
 )
-
 export default Step;
