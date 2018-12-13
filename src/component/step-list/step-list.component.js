@@ -6,11 +6,9 @@ import Step from '../step/step.component';
 
 const StepList = () => {
     return (
-        <div>
+        <div className="step-list">
             {stepValueList.map((stepValue, key) => (
-                <div className='step-list'>
                     <Step key={key} {...stepValue} />
-                </div>
                 )
             )}
         </div>

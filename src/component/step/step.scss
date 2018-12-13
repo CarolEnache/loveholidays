@@ -1,9 +1,41 @@
 $color-white: #fff;
-
 .step {
   padding: 1rem;
   flex-grow: 1;
   text-align: center;
   color: $color-white;
   font-weight: bold;
-} 
+  position: relative;
+  $arrow-with: 25px;
+  height: ($arrow-with - 7px);
+
+  &::after {
+    // some rules
+    z-index: 2;
+    content: '';
+    position: absolute;
+    right: -$arrow-with + 2px;
+    top: 0;
+    bottom: 0;
+    border-top: $arrow-with solid transparent;
+    border-left-width: $arrow-with;
+    border-left-style: solid;
+    border-left-color: inherit;
+    border-bottom: $arrow-with solid transparent;
+  }
+
+  &::before {
+    // some rules
+    z-index: 1;
+    content: '';
+    position: absolute;
+    right: -$arrow-with;
+    top: 0;
+    bottom: 0;
+    border-top: $arrow-with solid transparent;
+    border-left-width: $arrow-with;
+    border-left-style: solid;
+    border-left-color:  $color-white;
+    border-bottom: $arrow-with solid transparent;
+  }
+}
