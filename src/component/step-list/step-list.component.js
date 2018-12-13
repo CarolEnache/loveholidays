@@ -1,6 +1,6 @@
 import React from 'react';
 import { stepValueList } from './step-data-list'
-import './step-list.css'
+import './step-list.scss'
 
 import Step from '../step/step.component';
 
