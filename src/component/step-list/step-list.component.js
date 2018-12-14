@@ -9,7 +9,7 @@ const StepList = () => {
     return (
         <div className="step-list">
             {stepValueList.map((stepValue, key) => (
-                    <Step key={key} {...stepValue} />
+                    <Step key={key} {...stepValue} step={key + 1} />
                 )
             )}
         </div>

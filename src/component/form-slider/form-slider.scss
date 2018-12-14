@@ -2,6 +2,7 @@
   overflow: hidden;
   height: 200px;
   position: relative;
+  margin-top: 1rem;
 }
 
 .form-slider {
@@ -14,8 +15,8 @@
   color: white;
   text-align: center;
 }
- .form-slider__slide {
-  // height: 100%;
+ .form-slider__radio {
+  display: none;
 }
 
  @for $i from 1 through 4 {
