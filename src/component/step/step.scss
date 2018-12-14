@@ -8,6 +8,7 @@ $color-white: #fff;
   position: relative;
   $arrow-with: 25px;
   height: ($arrow-with - 7px);
+  cursor: pointer;
 
   &::after {
     // some rules
